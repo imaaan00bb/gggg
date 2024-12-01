@@ -3614,6 +3614,36 @@ lbl("INTERWORLD - METAMORPHOSIS")
 lbl("was listening to ^^ and animating")
 
 btn("empty reanimate (no animations)", reanimate)
+local t=reanimate()
+if type(t)~="table" then return end
+local addmode=t.addmode
+local getJoint=t.getJoint
+local velbycfrvec=t.velbycfrvec
+local RootJoint=getJoint("RootJoint")
+local RightShoulder=getJoint("Right Shoulder")
+local LeftShoulder=getJoint("Left Shoulder")
+local RightHip=getJoint("Right Hip")
+local LeftHip=getJoint("Left Hip")
+local Neck=getJoint("Neck")
+t.setWalkSpeed(4.5)
+
+idle=function()
+	Neck.C0=Lerp(Neck.C0,cfMul(cf(0,1,0),angles(-1.5707963267948966,0,3.141592653589793)),deltaTime) 
+	RightShoulder.C0=Lerp(RightShoulder.C0,cfMul(cf(1,0.5,0),angles(0,1.5707963267948966,0)),deltaTime) 
+	LeftHip.C0=Lerp(LeftHip.C0,cfMul(cf(-1,-1,0),angles(0,-1.5707963267948966,0)),deltaTime) 
+	LeftShoulder.C0=Lerp(LeftShoulder.C0,cfMul(cf(-1,0.5,0),angles(0,-1.5707963267948966,0)),deltaTime) 
+	RootJoint.C0=Lerp(RootJoint.C0,angles(-1.5707963267948966,0,3.141592653589793),deltaTime) 
+	RightHip.C0=Lerp(RightHip.C0,cfMul(cf(1,-1,0),angles(0,1.5707963267948966,0)),deltaTime) 
+end,
+walk=function()
+	Neck.C0=Lerp(Neck.C0,cfMul(cf(0,1,0),angles(-1.5707963267948966,0,3.141592653589793)),deltaTime) 
+	RightShoulder.C0=Lerp(RightShoulder.C0,cfMul(cf(1,0.5,0),angles(0,1.5707963267948966,0)),deltaTime) 
+	LeftHip.C0=Lerp(LeftHip.C0,cfMul(cf(-1,-1,0),angles(0,-1.5707963267948966,0)),deltaTime) 
+	LeftShoulder.C0=Lerp(LeftShoulder.C0,cfMul(cf(-1,0.5,0),angles(0,-1.5707963267948966,0)),deltaTime) 
+	RootJoint.C0=Lerp(RootJoint.C0,angles(-1.5707963267948966,0,3.141592653589793),deltaTime) 
+	RightHip.C0=Lerp(RightHip.C0,cfMul(cf(1,-1,0),angles(0,1.5707963267948966,0)),deltaTime) 
+end
+
 insSet(btn("stop current script",stopreanimate),"TextColor3",c3(0.75,0,0))
 
 lbl("SETTINGS (REANIMATE TO APPLY)")
@@ -3741,4 +3771,4 @@ if not iscg then
 	insSet(i7,"Text",guiTheme.guiTitle)
 end
 
---096
+--empty
