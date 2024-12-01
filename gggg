@@ -215,6 +215,14 @@ local accessorylimbs={
 	{meshid="18640901641",textureid="18640901676",C0=cf_0,Name="Right Leg"},
 	{meshid="18640914129",textureid="18640914168",C0=cf_0,Name="Right Arm"},
 	{meshid="18640901641",textureid="18640901676",C0=cf_0,Name="Left Leg"},
+
+	--avatar
+	{Name="Torso"},
+	{Name="Left Arm"},
+	{Name="Right Leg"},
+	{Name="Right Arm"},
+	{Name="Left Leg"},
+
 }
 
 local gp=function(p,n,cl)
