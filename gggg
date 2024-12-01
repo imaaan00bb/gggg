@@ -2100,10 +2100,20 @@ btn("first anim", function()
 			local Ychg=velYchg()/20
 
 			RightShoulder.C0=Lerp(RightShoulder.C0,cfMul(cf(1,0.5,0),angles(0,1.5707963267948966,0)),deltaTime) 
+			AccessoryWeld.C0=Lerp(AccessoryWeld.C0,cfMul(cf(3.8,-0.7,0.0061435699462890625),angles(0,0.3141592653589793*sin(sine*5),-1.5707963267948966)),deltaTime) 
 			LeftShoulder.C0=Lerp(LeftShoulder.C0,cfMul(cf(-1,0.5,0),angles(0,-1.5707963267948966,0)),deltaTime) 
+			AccessoryWeld.C0=Lerp(AccessoryWeld.C0,cfMul(cf(3.3,-1.5,0.07818222045898438),angles(0,0.7853981633974483*sin((sine+470)*5),-1.5707963267948966)),deltaTime) 
+			AccessoryWeld.C0=Lerp(AccessoryWeld.C0,cf(0.00002765655517578125,0,-0.0001373291015625),deltaTime) 
+			AccessoryWeld.C0=Lerp(AccessoryWeld.C0,cfMul(cf(-1.9,-1.5,0.11724090576171875),angles(0,0.7853981633974483*sin(sine*5),1.5707963267948966)),deltaTime) 
+			AccessoryWeld.C0=Lerp(AccessoryWeld.C0,cfMul(cf(-5,-0.8,0.0061435699462890625),angles(0,0.3141592653589793*sin(sine*5),1.5707963267948966)),deltaTime) 
+			AccessoryWeld.C0=Lerp(AccessoryWeld.C0,cf(0,2,0),deltaTime) 
+			AccessoryWeld.C0=Lerp(AccessoryWeld.C0,cfMul(cf(1.9,-1.5,0.11724090576171875),angles(0,0.7853981633974483*sin((sine+470)*5),-1.5707963267948966)),deltaTime) 
 			RightHip.C0=Lerp(RightHip.C0,cfMul(cf(1,-1,0),angles(0,1.5707963267948966,0)),deltaTime) 
+			AccessoryWeld.C0=Lerp(AccessoryWeld.C0,cfMul(cf(5,-0.7,0.11724090576171875),angles(0,0.3141592653589793*sin(sine*5),-1.5707963267948966)),deltaTime) 
 			RootJoint.C0=Lerp(RootJoint.C0,angles(-1.5707963267948966,0,3.141592653589793),deltaTime) 
 			LeftHip.C0=Lerp(LeftHip.C0,cfMul(cf(-1,-1,0),angles(0,-1.5707963267948966,0)),deltaTime) 
+			AccessoryWeld.C0=Lerp(AccessoryWeld.C0,cfMul(cf(-3.8,-0.8,0.11724090576171875),angles(0,0.3141592653589793*sin(sine*5),1.5707963267948966)),deltaTime) 
+			AccessoryWeld.C0=Lerp(AccessoryWeld.C0,cfMul(cf(-3.3,-1.5,0.07818222045898438),angles(0,0.7853981633974483*sin(sine*5),1.5707963267948966)),deltaTime) 
 			Neck.C0=Lerp(Neck.C0,cfMul(cf(0,1,0),angles(-1.5707963267948966,0,3.141592653589793)),deltaTime) 
 			--MW_animatorProgressSave: RightArm,1,0,0,1,0,0,0,1,0.5,0,0,1,90,0,0,1,0,0,0,1,0,0,0,1,InternationalFedora_Handle,3.8,0,0,0,0,0,0,1,-0.7,0,0,1,0,18,0,5,0.0061435699462890625,0,0,1,-90,0,0,1,LeftArm,-1,0,0,1,0,0,0,1,0.5,0,0,1,-90,0,0,1,0,0,0,1,0,0,0,1,MeshPartAccessory_Handle,3.3,0,0,1,0,0,0,1,-1.5,0,0,1,0,45,470,5,0.07818222045898438,0,0,1,-90,0,0,1,Meshes/meshPartAccessory_Handle,0.00002765655517578125,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,-0.0001373291015625,0,0,1,0,0,0,1,InternationalFedora_Handle,-1.9,0,0,0,0,0,0,1,-1.5,0,0,1,0,45,0,5,0.11724090576171875,0,0,1,90,0,0,1,InternationalFedora_Handle,-5,0,0,2,0,0,0,1,-0.8,0,0,1,0,18,0,5,0.0061435699462890625,0,0,1,90,0,0,1,MeshPartAccessory_Handle,0,0,0,1,0,0,0,1,2,0,0,0,0,0,0,1,,0,0,1,0,0,0,1,InternationalFedora_Handle,1.9,0,0,0,0,0,0,1,-1.5,0,0,1,0,45,470,5,0.11724090576171875,0,0,,-90,0,0,1,RightLeg,1,0,0,1,0,0,0,1,-1,0,0,1,90,0,0,1,0,0,0,1,0,0,0,1,InternationalFedora_Handle,5,0,0,1,0,0,0,1,-0.7,0,0,1,0,18,0,5,0.11724090576171875,0,0,1,-90,0,0,1,Torso,0,0,0,1,-90,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,180,0,0,1,LeftLeg,-1,0,0,1,0,0,0,1,-1,0,0,1,-90,0,0,1,0,0,0,1,0,0,0,1,InternationalFedora_Handle,-3.8,0,0,1,0,0,0,1,-0.8,0,0,1,0,18,0,5,0.11724090576171875,0,0,1,90,0,0,1,MeshPartAccessory_Handle,-3.3,0,0,0,0,0,0,1,-1.5,0,0,1,0,45,0,5,0.07818222045898438,0,0,1,90,0,0,1,Head,0,0,0,1,-90,0,0,1,1,0,0,1,0,0,0,1,0,0,0,1,180,0,0,1
 		end,
