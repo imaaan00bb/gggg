@@ -215,13 +215,6 @@ local accessorylimbs={
 	{meshid="18640901641",textureid="18640901676",C0=cf_0,Name="Right Leg"},
 	{meshid="18640914129",textureid="18640914168",C0=cf_0,Name="Right Arm"},
 	{meshid="18640901641",textureid="18640901676",C0=cf_0,Name="Left Leg"},
-
-	-- rig i use
-	{meshid="18640899369",textureid="18640899481",C0=cf_0,Name="Torso"},
-	{meshid="18640914129",textureid="18640914168",C0=cf_0,Name="Left Arm"},
-	{meshid="18640901641",textureid="18640901676",C0=cf_0,Name="Right Leg"},
-	{meshid="18640914129",textureid="18640914168",C0=cf_0,Name="Right Arm"},
-	{meshid="18640901641",textureid="18640901676",C0=cf_0,Name="Left Leg"},
 }
 
 local gp=function(p,n,cl)
